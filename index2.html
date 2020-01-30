@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/@mdi/font@4.x/css/materialdesignicons.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/vuetify@2.x/dist/vuetify.min.css" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Curso Vue</title>
+    <style>
+        [v-cloak]{
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div id="app">
+        <v-app>
+            <v-content>
+                <v-container>
+                    <p v-cloak>{{title}}</p>
+                    <hello-world></hello-world>
+                    <vue-directives></vue-directives>
+                </v-container>
+            </v-content>
+        </v-app>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vuetify@2.x/dist/vuetify.js"></script>
+    <script src="./components/Hello-World.js"></script>
+    <script src="./components/DirectiveHtml.js"></script>
+    <script src="./components/DirectiveShow.js"></script>
+    <script src="./components/DirectiveIf.js"></script>
+    <script src="./components/DirectiveFor.js"></script>
+    <script src="./components/DirectiveOn.js"></script>
+    <script src="./components/DirectiveModel.js"></script>
+    <script src="./components/saludar-comp.js"></script>
+    <script src="./components/slotComponents/buttonComp.js"></script>
+    <script src="./components/DirectiveSlot.js"></script>
+    <script src="./components/DirectivePre.js"></script>
+    <script src="./components/DirectiveOnce.js"></script>
+    <script src="./components/VueDirectives.js"></script>
+    <script>
+        let vm=new Vue({
+            el: '#app',
+            vuetify: new Vuetify(),
+            data(){
+                return {
+                    title: 'Holiwis'
+                }
+            }
+        })
+    </script>
+</body>
+</html>
